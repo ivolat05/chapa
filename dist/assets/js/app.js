@@ -116,6 +116,28 @@ $(function () {
 
 	menu();
 
+	// включение выключение света карты
+	function lightOn() {
+		let backlightLabel = document.querySelector('.backlight-label');
+		let balightLabelInput = document.querySelector('.balight-label-input');
+		let baligntImgOff = document.querySelector('.balignt-img--off');
+		let baligntImgOn = document.querySelector('.balignt-img--on');
+		if (backlightLabel) {
+			backlightLabel.addEventListener('click', () => {
+				if (balightLabelInput.checked) {
+
+					baligntImgOff.classList.remove('active');
+					baligntImgOn.classList.add('active')
+				} else {
+					baligntImgOff.classList.add('active');
+					baligntImgOn.classList.remove('active')
+				}
+			})
+		}
+
+	}
+
+	lightOn();
 
 
 })
