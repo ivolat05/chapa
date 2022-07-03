@@ -190,7 +190,7 @@ $(function () {
 	lightOn();
 
 
-	// валидация
+
 
 	// маска телефона
 	$('.mask-tell').inputmask("+7 (999) 999-9999", {
@@ -204,54 +204,60 @@ $(function () {
 		}
 	});
 
-	// кол-во символов ввода телефона
-	$.validator.addMethod("minlenghtphone", function (value, element) {
-		return value.replace(/\D+/g, '').length > 10;
-	});
+	// валидация
+	function validationForm() {
+		// кол-во символов ввода телефона
+		$.validator.addMethod("minlenghtphone", function (value, element) {
+			return value.replace(/\D+/g, '').length > 10;
+		});
 
-	var validate = {
-		rules: {
-			name: {
-				required: true,
-				minlength: 3
+		var validate = {
+			rules: {
+				name: {
+					required: true,
+					minlength: 3
 
+				},
+				phone: {
+					required: true,
+					minlenghtphone: true
+				},
 			},
-			phone: {
-				required: true,
-				minlenghtphone: true
+			errorPlacement: function (error, element) {
+				return;
 			},
-		},
-		errorPlacement: function (error, element) {
-			return;
-		},
-		submitHandler: function () {
-			var that = this;
-			$.ajax({
-				type: 'POST',
-				url: 'sendmail.php',
-				data: $(that.currentForm).serialize(),
-				success: function (msg) {
-					$(that.currentForm).trigger('reset');
-					$.magnificPopup.open({
-						items: {
-							src: "#popup-success"
-						},
-						callbacks: {
-							open: function () {
-								setTimeout($.magnificPopup.close, 5000);
+			submitHandler: function () {
+				var that = this;
+				$.ajax({
+					type: 'POST',
+					url: 'sendmail.php',
+					data: $(that.currentForm).serialize(),
+					success: function (msg) {
+						$(that.currentForm).trigger('reset');
+						$.magnificPopup.open({
+							items: {
+								src: "#popup-success"
+							},
+							callbacks: {
+								open: function () {
+									setTimeout($.magnificPopup.close, 5000);
+								}
 							}
-						}
-					});
-					ym(89234425, 'reachGoal', 'zayavka');
-				}
-			});
+						});
+						ym(89234425, 'reachGoal', 'zayavka');
+					}
+				});
+			}
+		};
+
+		let form = document.querySelectorAll('form');
+		console.log(form.length)
+		for (let i = 0; i <= form.length; i++) {
+
+			$(`#form-${i}`).validate(validate);
 		}
-	};
-
-
-	$("#form-1").validate(validate);
-	$("#form-2").validate(validate);
-
+	}
+	validationForm();
 
 	// slaider
 
@@ -321,7 +327,37 @@ $(function () {
 
 
 
+	// material popup
 
+	function materialPopup() {
+		let materialBtnActive = document.querySelectorAll('.material-btn-active');
+		let catalogButton = document.querySelectorAll('.catalog-button');
+
+		catalogButton.forEach(item => {
+			item.addEventListener('click', () => {
+				let itemId = item.getAttribute('data-window');
+				let windowActivet = document.getElementById(itemId)
+				console.log(itemId)
+			})
+		})
+
+		materialBtnActive.forEach(item => {
+			item.addEventListener('click', () => {
+				let itemId = item.getAttribute('data-type');
+				console.log(itemId)
+			})
+		})
+
+		$('#material-slaider--pvh-black').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: false,
+			arrows: true,
+			nextArrow: $('#pvh-black-prev'),
+			prevArrow: $('#pvh-black-next'),
+		});
+	}
+	materialPopup()
 })
 
 
