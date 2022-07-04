@@ -55,6 +55,19 @@ $(function () {
 		mainClass: 'mfp-fade'
 	});
 
+	$('.galary-popup').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		mainClass: 'mfp-galery',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			tPrev: 'Previous (Left arrow key)',
+			tNext: 'Next (Right arrow key)',
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
+
 	//popup close
 	function closePopup(closeBtn) {
 		let popupClose = document.querySelectorAll(`.${closeBtn}`);
@@ -378,6 +391,30 @@ $(function () {
 
 	}
 	materialPopup()
+
+	// сворачивание разворачивание галереии
+	function galeryVisible() {
+		const galeryBtn = document.querySelector('.galery-btn');
+		let galeryRow = document.querySelector('.galery-row');
+		let galaryBoxLink = document.querySelectorAll('.galary-box-link');
+		if (galeryBtn && galeryRow && galaryBoxLink) {
+			galeryBtn.addEventListener('click', () => {
+				if (galeryRow.classList.contains('--active')) {
+					galeryRow.classList.remove('--active');
+				} else {
+					galeryRow.classList.add('--active');
+				}
+				galaryBoxLink.forEach(item => {
+					if (item.classList.contains('--active')) {
+						item.classList.remove('--active');
+					} else {
+						item.classList.add('--active');
+					}
+				})
+			})
+		}
+	}
+	galeryVisible()
 })
 
 
