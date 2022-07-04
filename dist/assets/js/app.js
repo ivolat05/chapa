@@ -277,9 +277,7 @@ $(function () {
 		};
 
 		let form = document.querySelectorAll('form');
-		console.log(form.length)
 		for (let i = 0; i <= form.length; i++) {
-
 			$(`#form-${i}`).validate(validate);
 		}
 	}
