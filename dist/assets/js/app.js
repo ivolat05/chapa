@@ -332,30 +332,50 @@ $(function () {
 	function materialPopup() {
 		let materialBtnActive = document.querySelectorAll('.material-btn-active');
 		let catalogButton = document.querySelectorAll('.catalog-button');
-
+		let materialMap = document.querySelectorAll('.material-map');
 		catalogButton.forEach(item => {
 			item.addEventListener('click', () => {
 				let itemId = item.getAttribute('data-window');
-				let windowActivet = document.getElementById(itemId)
-				console.log(itemId)
+				let itemType = item.getAttribute('data-type');
+				let windowActivet = document.getElementById(`#${itemId}`);
+				materialMap.forEach(item => {
+					if (item.classList.contains('--active')) {
+						item.classList.remove('--active');
+					}
+				})
+				windowActivet.classList.add('--active');
+				activeSlaid(itemType)
+
+
 			})
 		})
 
 		materialBtnActive.forEach(item => {
 			item.addEventListener('click', () => {
 				let itemId = item.getAttribute('data-type');
-				console.log(itemId)
+				activeSlaid(itemId)
 			})
 		})
 
-		$('#material-slaider--pvh-black').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			dots: false,
-			arrows: true,
-			nextArrow: $('#pvh-black-prev'),
-			prevArrow: $('#pvh-black-next'),
-		});
+		function activeSlaid(nameBtn) {
+			let materialSlaid = document.querySelector(`#material-slaider--${nameBtn}`);
+			let materialSlaiderBox = document.querySelectorAll('.material-slaider');
+			materialSlaiderBox.forEach(item => {
+				if (item.classList.contains('--active')) {
+					item.classList.remove('--active')
+				}
+			})
+			materialSlaid.classList.add('--active')
+			$(`#slaid-start-${nameBtn}`).not('.slick-initialized').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: true,
+				nextArrow: $(`#${nameBtn}-prev`),
+				prevArrow: $(`#${nameBtn}-next`),
+			});
+		}
+
 	}
 	materialPopup()
 })

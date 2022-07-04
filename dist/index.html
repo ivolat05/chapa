@@ -212,7 +212,7 @@
 									class="catalog-btn open-modal d-flex align-items-center justify-content-center --btn-hover">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-pvh"
+								<a href="#materila-popup" data-window="map-pvh" data-type="pvh-black"
 									class="catalog-button open-modal  d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
@@ -242,7 +242,7 @@
 									class="catalog-btn open-modal --btn-hover d-flex align-items-center justify-content-center">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-birch"
+								<a href="#materila-popup" data-window="map-birch" data-type="birch-white"
 									class="catalog-button  open-modal d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
@@ -272,8 +272,8 @@
 									class="catalog-btn open-modal --btn-hover d-flex align-items-center justify-content-center">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-oak"
-									class="catalog-button open-modal  d-flex align-items-center justify-content-center">
+								<a href="#materila-popup" data-window="map-oak" data-type="oak-white"
+									class="catalog-button open-modal d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
 							</div>
@@ -302,7 +302,7 @@
 									class="catalog-btn open-modal --btn-hover d-flex align-items-center justify-content-center">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-multilevel"
+								<a href="#materila-popup" data-window="map-multilevel" data-type="multilevel-one"
 									class="catalog-button  open-modal d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
@@ -332,7 +332,7 @@
 									class="catalog-btn open-modal --btn-hover d-flex align-items-center justify-content-center">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-backlight"
+								<a href="#materila-popup" data-window="map-backlight" data-type="backlight-cold"
 									class="catalog-button open-modal d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
@@ -360,7 +360,7 @@
 									class="catalog-btn open-modal --btn-hover d-flex align-items-center justify-content-center">
 									заказать
 								</a>
-								<a href="#materila-popup" data-window="#map-valuable"
+								<a href="#materila-popup" data-window="map-valuable" data-type="dark-wood"
 									class="catalog-button open-modal d-flex align-items-center justify-content-center">
 									подробнее
 								</a>
@@ -1143,11 +1143,11 @@
 	
 		</button>
 	</div>
-	<div id="#materila-popup" class="material">
+	<div id="materila-popup" class="material mfp-hide">
 		<!--Карта мира из ПВХ-->
 		<div id="#map-pvh" class="material-map">
 	
-			<div id="#map-pvh-black" class="material-map-type">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
@@ -1156,43 +1156,43 @@
 						Посмотреть расцветку:
 					</div>
 					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
+						<label class="material-label material-btn-active" data-type="pvh-black">
 							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
 							<span class="maerial-label-span">
 								Черная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
+						<label class="material-label material-btn-active" data-type="pvh-indigo">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Индиго
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
+						<label class="material-label material-btn-active" data-type="pvh-vud">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Вуд
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
+						<label class="material-label material-btn-active" data-type="pvh-vio">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Вио
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
+						<label class="material-label material-btn-active" data-type="pvh-okean">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Океан
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
+						<label class="material-label material-btn-active" data-type="pvh-mo">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Мо
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
+						<label class="material-label material-btn-active" data-type="pvh-political">
 							<input type="radio" name="material-radio-1-1" class="material-label-input">
 							<span class="maerial-label-span">
 								Политическая
@@ -1200,19 +1200,24 @@
 						</label>
 					</div>
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--pvh-black-->
+				<div id="material-slaider--pvh-black" class="material-slaider  position-relative">
+					<div id="slaid-start-pvh-black" class="material-slaid ">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/pvh-black/pvh-black-5.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
 							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/pvh-black/pvh-black-2.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/pvh-black/pvh-black-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-black/pvh-black-4.jpg" alt="" class="material-slaider-img">
 						</div>
 					</div>
 					<div class="material-slaider-row">
@@ -1238,6 +1243,283 @@
 						от 6 100 руб.
 					</div>
 				</div>
+	
+				<!--pvh-indigo-->
+				<div id="material-slaider--pvh-indigo" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-indigo" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-indigo/pvh-indigo-5.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-indigo/pvh-indigo-1.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-indigo/pvh-indigo-2.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-indigo/pvh-indigo-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-indigo/pvh-indigo-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-indigo-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-indigo-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+				<!--pvh-vud-->
+				<div id="material-slaider--pvh-vud" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-vud" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vud/pvh-vud-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vud/pvh-vud-1.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vud/pvh-vud-2.jpg" alt="" class="material-slaider-img">
+						</div>
+	
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-vud-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-vud-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+				<!--pvh-vio-->
+				<div id="material-slaider--pvh-vio" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-vio" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-6.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-1.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-2.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-4.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-vio/pvh-vio-5.jpg" alt="" class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-vio-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-vio-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+				<!--pvh-okean-->
+				<div id="material-slaider--pvh-okean" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-okean" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-7.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-1.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/	pvh-okean-2.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-4.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-5.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-okean/pvh-okean-6.jpg" alt="" class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-vio-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-vio-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+				<!--pvh-mo-->
+				<div id="material-slaider--pvh-mo" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-mo" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-7.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-1.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-2.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-4.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-5.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-mo/pvh-mo-6.jpg" alt="" class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-mo-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-mo-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+				<!--pvh-political-->
+				<div id="material-slaider--pvh-political" class="material-slaider position-relative">
+					<div id="slaid-start-pvh-political" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-political/pvh-political-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-political/pvh-political-1.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-political/pvh-political-2.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/pvh-political/pvh-political-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="pvh-political-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="pvh-political-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+					<div class="material-pay">
+						<span>от 6 700 руб.</span>
+						от 6 100 руб.
+					</div>
+				</div>
+	
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1271,13 +1553,16 @@
 				</div>
 			</div>
 	
+	
+	
+	
 		</div>
 	
 	
 		<!--Карта мира из березы-->
 		<div id="#map-birch" class="material-map">
 	
-			<div id="#map-pvh-black" class="material-map-type">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
@@ -1286,67 +1571,52 @@
 						Посмотреть расцветку:
 					</div>
 					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
-							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
+						<label class="material-label material-btn-active" data-type="birch-white">
+							<input type="radio" name="material-radio-2-1" class="material-label-input" checked>
 							<span class="maerial-label-span">
-								Черная
+								Светлая
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
+						<label class="material-label material-btn-active" data-type="birch-dark">
+							<input type="radio" name="material-radio-2-1" class="material-label-input">
 							<span class="maerial-label-span">
-								Индиго
+								Темная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вуд
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вио
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Океан
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Мо
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Политическая
-							</span>
-						</label>
+	
 					</div>
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--birch-white-->
+				<div id="material-slaider--birch-white" class="material-slaider position-relative">
+					<div id="slaid-start-birch-white" class="material-slaid">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/birch-white/birch-white-6.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/birch-white/birch-white-1.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/birch-white/birch-white-2.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/birch-white/birch-white-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-white/birch-white-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-white/birch-white-5.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 					</div>
 					<div class="material-slaider-row">
-						<button id="pvh-black-prev"
+						<button id="birch-white-prev"
 							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
@@ -1355,7 +1625,7 @@
 	
 	
 						</button>
-						<button id="pvh-black-next"
+						<button id="birch-white-next"
 							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
@@ -1363,11 +1633,52 @@
 							</svg>
 						</button>
 					</div>
-					<div class="material-pay">
-						<span>от 6 700 руб.</span>
-						от 6 100 руб.
-					</div>
+	
 				</div>
+	
+				<!--birch-dark-->
+				<div id="material-slaider--birch-dark" class="material-slaider position-relative">
+					<div id="slaid-start-birch-dark" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-dark/birch-dark-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-dark/birch-dark-1.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-dark/birch-dark-2.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/birch-dark/birch-dark-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+	
+					</div>
+					<div class="material-slaider-row">
+						<button id="birch-dark-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="birch-dark-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+	
+				</div>
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1398,6 +1709,10 @@
 					<p class="material-subtext">
 						*Точные сроки уточняйте у менеджера.
 					</p>
+					<div class="material-pay-2">
+						<span>от 6 500 руб.</span>
+						от 5 900 руб.
+					</div>
 				</div>
 			</div>
 	
@@ -1407,8 +1722,7 @@
 	
 		<!--Карта мира из дуба-->
 		<div id="#map-oak" class="material-map">
-	
-			<div id="#map-pvh-black" class="material-map-type">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
@@ -1417,67 +1731,41 @@
 						Посмотреть расцветку:
 					</div>
 					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
-							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
+						<label class="material-label material-btn-active" data-type="oak-white">
+							<input type="radio" name="material-radio-3-1" class="material-label-input" checked>
 							<span class="maerial-label-span">
-								Черная
+								Светлая
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
+						<label class="material-label material-btn-active" data-type="oak-dark">
+							<input type="radio" name="material-radio-3-1" class="material-label-input">
 							<span class="maerial-label-span">
-								Индиго
+								Темная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вуд
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вио
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Океан
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Мо
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Политическая
-							</span>
-						</label>
+	
 					</div>
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--oak-white-->
+				<div id="material-slaider--oak-white" class="material-slaider position-relative">
+					<div id="slaid-start-oak-white" class="material-slaid">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/oak-white/oak-white-1.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/oak-white/oak-white-1.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/oak-white/oak-white-2.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/oak-white/oak-white-3.jpg" alt="" class="material-slaider-img">
 						</div>
+	
 					</div>
 					<div class="material-slaider-row">
-						<button id="pvh-black-prev"
+						<button id="oak-white-prev"
 							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
@@ -1486,7 +1774,7 @@
 	
 	
 						</button>
-						<button id="pvh-black-next"
+						<button id="oak-white-next"
 							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
@@ -1494,11 +1782,45 @@
 							</svg>
 						</button>
 					</div>
-					<div class="material-pay">
-						<span>от 6 700 руб.</span>
-						от 6 100 руб.
-					</div>
+	
 				</div>
+	
+				<!--birch-dark-->
+				<div id="material-slaider--oak-dark" class="material-slaider position-relative">
+					<div id="slaid-start-oak-dark" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/oak-dark/oak-dark-3.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/oak-dark/oak-dark-1.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/oak-dark/oak-dark-2.jpg" alt="" class="material-slaider-img">
+						</div>
+	
+					</div>
+					<div class="material-slaider-row">
+						<button id="oak-dark-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="oak-dark-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+	
+				</div>
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1529,16 +1851,20 @@
 					<p class="material-subtext">
 						*Точные сроки уточняйте у менеджера.
 					</p>
+					<div class="material-pay-2">
+						<span>от 6 500 руб.</span>
+						от 5 900 руб.
+					</div>
 				</div>
 			</div>
+	
 	
 		</div>
 	
 	
 		<!--Многоуровневые карты мира-->
 		<div id="#map-multilevel" class="material-map">
-	
-			<div id="#map-pvh-black" class="material-map-type">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
@@ -1547,67 +1873,49 @@
 						Посмотреть расцветку:
 					</div>
 					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
-							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
+						<label class="material-label material-btn-active" data-type="multilevel-one">
+							<input type="radio" name="material-radio-4-1" class="material-label-input" checked>
 							<span class="maerial-label-span">
-								Черная
+								Одноцветная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
+						<label class="material-label material-btn-active" data-type="multilevel-two">
+							<input type="radio" name="material-radio-4-1" class="material-label-input">
 							<span class="maerial-label-span">
-								Индиго
+								Разноцветная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вуд
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вио
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Океан
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Мо
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Политическая
-							</span>
-						</label>
+	
 					</div>
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--multilevel-one-->
+				<div id="material-slaider--multilevel-one" class="material-slaider position-relative">
+					<div id="slaid-start-multilevel-one" class="material-slaid">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/multilevel-one/multilevel-one-5.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/multilevel-one/multilevel-one-1.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/multilevel-one/multilevel-one-2.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/multilevel-one/multilevel-one-3.jpg" alt=""
+								class="material-slaider-img">
 						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/multilevel-one/multilevel-one-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+	
 					</div>
 					<div class="material-slaider-row">
-						<button id="pvh-black-prev"
+						<button id="multilevel-one-prev"
 							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
@@ -1616,7 +1924,7 @@
 	
 	
 						</button>
-						<button id="pvh-black-next"
+						<button id="multilevel-one-next"
 							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
@@ -1624,11 +1932,52 @@
 							</svg>
 						</button>
 					</div>
-					<div class="material-pay">
-						<span>от 6 700 руб.</span>
-						от 6 100 руб.
-					</div>
+	
 				</div>
+	
+				<!--multilevel-two-->
+				<div id="material-slaider--multilevel-two" class="material-slaider position-relative">
+					<div id="slaid-start-multilevel-two" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/multilevel-two/multilevel-two-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/multilevel-two/multilevel-two-1.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/multilevel-two/multilevel-two-2.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/multilevel-two/multilevel-two-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+	
+					</div>
+					<div class="material-slaider-row">
+						<button id="multilevel-two-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="multilevel-two-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+	
+				</div>
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1659,6 +2008,10 @@
 					<p class="material-subtext">
 						*Точные сроки уточняйте у менеджера.
 					</p>
+					<div class="material-pay-2">
+						<span>от 16 500 руб.</span>
+						от 14 900 руб.
+					</div>
 				</div>
 			</div>
 	
@@ -1668,7 +2021,7 @@
 		<!--Карта мира с подсветкой-->
 		<div id="#map-backlight" class="material-map">
 	
-			<div id="#map-pvh-black" class="material-map-type">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
@@ -1677,67 +2030,56 @@
 						Посмотреть расцветку:
 					</div>
 					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
-							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
+						<label class="material-label material-btn-active" data-type="backlight-cold">
+							<input type="radio" name="material-radio-5-1" class="material-label-input" checked>
 							<span class="maerial-label-span">
-								Черная
+								Холодная
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
+						<label class="material-label material-btn-active" data-type="backlight-warm">
+							<input type="radio" name="material-radio-5-1" class="material-label-input">
 							<span class="maerial-label-span">
-								Индиго
+								Теплая
 							</span>
 						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вуд
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вио
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Океан
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Мо
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Политическая
-							</span>
-						</label>
+	
 					</div>
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--backlight-cold-->
+				<div id="material-slaider--backlight-cold" class="material-slaider position-relative">
+					<div id="slaid-start-backlight-cold" class="material-slaid">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-7.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-1.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-2.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-5.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-cold/backlight-cold-6.jpg" alt=""
+								class="material-slaider-img">
 						</div>
 					</div>
 					<div class="material-slaider-row">
-						<button id="pvh-black-prev"
+						<button id="backlight-cold-prev"
 							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
@@ -1746,7 +2088,7 @@
 	
 	
 						</button>
-						<button id="pvh-black-next"
+						<button id="backlight-cold-next"
 							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
@@ -1754,11 +2096,59 @@
 							</svg>
 						</button>
 					</div>
-					<div class="material-pay">
-						<span>от 6 700 руб.</span>
-						от 6 100 руб.
-					</div>
+	
 				</div>
+	
+				<!--backlight-warm-->
+				<div id="material-slaider--backlight-warm" class="material-slaider position-relative">
+					<div id="slaid-start-backlight-warm" class="material-slaid">
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-6.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-1.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-2.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-3.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-4.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/backlight-warm/backlight-warm-5.jpg" alt=""
+								class="material-slaider-img">
+						</div>
+					</div>
+					<div class="material-slaider-row">
+						<button id="backlight-warm-prev"
+							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+	
+	
+						</button>
+						<button id="backlight-warm-next"
+							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
+							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
+									stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+	
+				</div>
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1789,85 +2179,46 @@
 					<p class="material-subtext">
 						*Точные сроки уточняйте у менеджера.
 					</p>
+					<div class="material-pay-2">
+						<span>от 6 500 руб.</span>
+						от 5 900 руб.
+					</div>
 				</div>
 			</div>
-	
 		</div>
 	
 	
 		<!--Карта мира из ценных пород дерева-->
-		<div id="#map-dark-wood" class="material-map">
-	
-			<div id="#map-valuable" class="material-map-type">
+		<div id="#map-valuable" class="material-map">
+			<div class="material-map-type">
 				<div class="material-head">
 					<h3 class="material-head-title">
 						Карта мира из ПВХ
 					</h3>
-					<div class="material-head-text">
-						Посмотреть расцветку:
-					</div>
-					<div class="material-head-row">
-						<label class="material-label material-btn-active" data-type="#pvh-black">
-							<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
-							<span class="maerial-label-span">
-								Черная
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-indigo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Индиго
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vud">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вуд
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-vio">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Вио
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-ocean">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Океан
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-mo">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Мо
-							</span>
-						</label>
-						<label class="material-label material-btn-active" data-type="#pvh-political">
-							<input type="radio" name="material-radio-1-1" class="material-label-input">
-							<span class="maerial-label-span">
-								Политическая
-							</span>
-						</label>
-					</div>
+	
 				</div>
-				<div class="material-slaider position-relative">
-					<div id="material-slaider--pvh-black" class="material-slaider">
+	
+				<!--dark-wood-->
+				<div id="material-slaider--dark-wood" class="material-slaider position-relative">
+					<div id="slaid-start-dark-wood" class="material-slaid">
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/dark-wood/dark-wood-1.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/dark-wood/dark-wood-2.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/dark-wood/dark-wood-3.jpg" alt="" class="material-slaider-img">
 						</div>
 						<div class="material-slaider-box-img ex1">
-							<img src="./assets/img/material/pvh-black/pvh-black-1.jpg" alt="" class="material-slaider-img">
+							<img src="./assets/img/material/dark-wood/dark-wood-4.jpg" alt="" class="material-slaider-img">
+						</div>
+						<div class="material-slaider-box-img ex1">
+							<img src="./assets/img/material/dark-wood/dark-wood-5.jpg" alt="" class="material-slaider-img">
 						</div>
 					</div>
 					<div class="material-slaider-row">
-						<button id="pvh-black-prev"
+						<button id="dark-wood-prev"
 							class="material-slaider-btn --prev d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M15 25.0049L3 13.6503C3 13.6503 10.3137 6.72991 15 2.29565"
@@ -1876,7 +2227,7 @@
 	
 	
 						</button>
-						<button id="pvh-black-next"
+						<button id="dark-wood-next"
 							class="material-slaider-btn --next d-flex align-items-center justify-content-center">
 							<svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path opacity="0.9" d="M2 2.2832L14 13.6378C14 13.6378 6.68629 20.5582 2 24.9924"
@@ -1884,11 +2235,11 @@
 							</svg>
 						</button>
 					</div>
-					<div class="material-pay">
-						<span>от 6 700 руб.</span>
-						от 6 100 руб.
-					</div>
+	
 				</div>
+	
+	
+	
 				<div class="material-body">
 					<p class="material-body-text">
 						Карта может быть c любом цветовом варианте.
@@ -1919,9 +2270,12 @@
 					<p class="material-subtext">
 						*Точные сроки уточняйте у менеджера.
 					</p>
+					<div class="material-pay-2">
+						<span>от 6 500 руб.</span>
+						от 5 900 руб.
+					</div>
 				</div>
 			</div>
-	
 		</div>
 	
 	
