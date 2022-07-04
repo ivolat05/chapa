@@ -67,6 +67,19 @@ $(function () {
 			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
 		}
 	});
+	$('.galary-popup-2').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		mainClass: 'mfp-galery',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			tPrev: 'Previous (Left arrow key)',
+			tNext: 'Next (Right arrow key)',
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
+
 
 	//popup close
 	function closePopup(closeBtn) {
@@ -338,6 +351,25 @@ $(function () {
 		prevArrow: $('.stories__arrow-next'),
 	});
 
+	$('.reviews-slaider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: true,
+		rows: 0,
+		nextArrow: $('.reviews__arrow-prev'),
+		prevArrow: $('.reviews__arrow-next'),
+		responsive: [
+			{
+				breakpoint: 770,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+
+				}
+			}
+		]
+	});
 
 
 	// material popup
