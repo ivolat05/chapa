@@ -148,6 +148,7 @@ $(function () {
 			accordionBtn.forEach(item => {
 				item.addEventListener('click', () => {
 					item.classList.toggle("active");
+					item.parentElement.classList.toggle("accordion-active");
 					let panel = item.nextElementSibling;
 					if (panel.style.maxHeight) {
 						panel.style.maxHeight = null;
@@ -166,7 +167,7 @@ $(function () {
 		let body = document.querySelector('body');
 		let fonBack = document.querySelector('.fon');
 		let menuOpenBtn = document.querySelector('.header-menu-open');
-		let menuBox = document.querySelector('.header-mob');
+		let menuBox = document.querySelector('.mob');
 		let menuBtnClose = document.querySelectorAll('.--close');
 		if (menuBtnClose && menuBox && menuOpenBtn && fonBack) {
 			menuOpenBtn.addEventListener('click', () => {
@@ -310,9 +311,9 @@ $(function () {
 				arrows: false,
 				responsive: [
 					{
-						breakpoint: 770,
+						breakpoint: 1200,
 						settings: {
-							slidesToShow: 3,
+							slidesToShow: 2,
 							slidesToScroll: 1
 
 						}
@@ -347,6 +348,8 @@ $(function () {
 		arrows: true,
 		nextArrow: $('.stories__arrow-prev'),
 		prevArrow: $('.stories__arrow-next'),
+
+
 	});
 
 	$('.reviews-slaider').slick({
@@ -359,9 +362,17 @@ $(function () {
 		prevArrow: $('.reviews__arrow-next'),
 		responsive: [
 			{
-				breakpoint: 770,
+				breakpoint: 992,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
+					slidesToScroll: 1
+
+				}
+			}
+			, {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
 					slidesToScroll: 1
 
 				}

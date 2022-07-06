@@ -27,18 +27,26 @@
 
 <body>
 	
-	<div class="page d-flex flex-column">
+	<div class="page d-flex flex-column position-relative">
 		<header id="header" class="header">
 			<div class="container d-flex align-items-center justify-content-between">
+				<button class="header-menu-open d-lg-none d-block">
+					<svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="36" height="4" fill="white" />
+						<rect y="10" width="36" height="4" fill="white" />
+						<rect y="20" width="26" height="4" fill="white" />
+					</svg>
+		
+				</button>
 				<div class="header-logo d-flex align-items-center justify-content-start">
 					<img src="./assets/img/logo.svg" alt="" class="header-logo-img">
-					<div class="logo-text">
+					<div class="logo-text d-none d-lg-block">
 						Интерьерные карты <br>
 						с доставкой по всему миру
 					</div>
 				</div>
 				<div class="header-box d-flex align-items-center ">
-					<div class="header-tell">
+					<div class="header-tell d-none d-lg-block">
 						<a href="tel:89197186698" class="header-tell-link">
 							8 (919) 71-86-698
 						</a>
@@ -69,7 +77,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="main position-relative">
+		<main class="main position-relative" data-aos="fade-up">
 			<div class="container">
 				<div class="main-wrapp d-flex flex-column justify-content-center">
 					<div class="main-coll">
@@ -93,7 +101,8 @@
 						<div class="main-box-img">
 							<img src="./assets/img/main/main.png" alt="" class="main-img">
 						</div>
-						<div class="main-box-btn flex-row-reverse  d-flex align-items-end justify-content-between">
+						<div
+							class="main-box-btn flex-lg-row-reverse flex-column d-flex align-items-start align-items-lg-end justify-content-between">
 							<div class="main-video">
 								<a href="#popup-video-1" data-video="#video-1"
 									class="main-video-btn video-start position-relative d-flex align-items-center justify-content-center">
@@ -116,7 +125,8 @@
 		<section id="benefits" class="benefits benefits-padding position-relative">
 			<div class="container">
 				<div class="bentfits-wrap  d-flex  align-items-center justify-content-between flex-wrap">
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-right"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-1.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title text-center">
 							Ручная работа
@@ -127,7 +137,8 @@
 						</p>
 					</div>
 		
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-right"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-2.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title benifits-box-text  text-center">
 							Индивидуальность
@@ -138,7 +149,8 @@
 						</p>
 					</div>
 		
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-right"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-3.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title text-center">
 							Эко-материалы
@@ -148,7 +160,8 @@
 						</p>
 					</div>
 		
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-left"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-4.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title text-center">
 							Помощь с установкой
@@ -158,7 +171,8 @@
 						</p>
 					</div>
 		
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-left"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-5.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title text-center">
 							Гарантия качества
@@ -169,7 +183,8 @@
 						</p>
 					</div>
 		
-					<div class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
+					<div data-aos="fade-left"
+						class="box benifits-block --hover d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/benefits/benefits-6.svg" alt="" class="box-img benifits-block-imt">
 						<h3 class="box-title text-center">
 							Бережная доставка
@@ -182,12 +197,12 @@
 				</div>
 			</div>
 		</section>
-		<section id="catalog" class="catalog catalog-padding position-relative">
+		<section id="catalog" class="catalog catalog-padding position-relative" data-aos="fade-up">
 			<div class="container">
 				<h3 class="title catalog-title text-center">
-					Карты мира в наличии
+					Карты мира <span>в наличии</span>
 				</h3>
-				<div class="catalog-wrapp d-flex flex-wrap justify-content-between">
+				<div class="catalog-wrapp d-flex flex-wrap justify-content-around">
 		
 					<div class="catalog-box --hover d-flex flex-column">
 						<div class="catalog-head">
@@ -370,7 +385,7 @@
 		
 				</div>
 		
-				<div class="timer">
+				<div class="timer" data-aos="flip-up">
 					<h3 class="timer-title text-center">
 						Скидка 10% действует:
 					</h3>
@@ -422,10 +437,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="individ individ-padding position-relative">
+		<section class="individ individ-padding position-relative" data-aos="zoom-in">
 			<div class="container">
 				<h3 class="title individ-title text-center">
-					Делаем карты с любым дизайном
+					<span>Делаем карты</span> с любым дизайном
 				</h3>
 				<p class="individ-text text-center">
 					Нужна карта отдельного региона или города, или карта<br>
@@ -433,7 +448,7 @@
 				</p>
 				<img src="./assets/img/individ/individ-1.jpg" alt="" class="individ-img d-block">
 		
-				<div class="individ-row d-flex justify-content-between">
+				<div class="individ-row d-flex flex-wrap justify-content-lg-between justify-content-around">
 					<div class="box individ-box  d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/individ/individ-1.svg" alt="" class="box-img individ-box-img">
 						<h3 class="box-title text-center">
@@ -470,7 +485,8 @@
 					</div>
 		
 				</div>
-				<div id="individ-map" class="individ-container d-flex align-items-start">
+				<div id="individ-map" data-aos="fade-right"
+					class="individ-container d-flex flex-lg-row flex-column align-items-start">
 					<div class="individ-container-coll">
 						<h3 class="individ-coll-title text-start">
 							Нужна карта <br>
@@ -490,10 +506,10 @@
 				</div>
 			</div>
 		</section>
-		<section id="backlight" class="backlight backlight-padding position-relative">
+		<section id="backlight" class="backlight backlight-padding position-relative" data-aos="zoom-out-up">
 			<div class="container">
 				<h3 class="title backlight-title text-center">
-					Подсветка с комфортным управлением
+					Подсветка <span>с комфортным управлением</span>
 				</h3>
 				<p class="backlight-text text-center">
 					Включить или выключить свет:
@@ -512,7 +528,7 @@
 					<img src="./assets/img/backlight/backlight-1.png" alt="" class="balignt-img--off  active">
 					<img src="./assets/img/backlight/backlight-2.png" alt="" class="balignt-img--on  position-absolute">
 				</div>
-				<div class="backlight-row d-flex justify-content-between">
+				<div class="backlight-row d-flex  flex-wrap justify-content-lg-between justify-content-around">
 		
 					<div class="box backlight-box  d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/backlight/backlight-1.svg" alt="" class="box-img individ-box-img">
@@ -536,24 +552,24 @@
 						</p>
 					</div>
 		
-					<div class="box backlight-box  d-flex flex-column align-items-center justify-content-center">
+					<div class="box backlight-box --three d-flex flex-column align-items-center justify-content-center">
 						<img src="./assets/img/backlight/backlight-3.svg" alt="" class="box-img individ-box-img">
 						<h3 class="box-title text-center">
 							Детализация
 						</h3>
 						<p class="box-text backlight-box-text text-center">
-							Можем подсветить <br>
-							всю карту, либо <br>
+							Можем подсветить
+							всю карту, либо
 							отдельные зоны.
 						</p>
 					</div>
 		
 				</div>
-				<div class="backlight-container">
+				<div class="backlight-container" data-aos="flip-up">
 					<h3 class="backlight-container-title text-center">
-						Нужна карта с подсветкой?
+						Нужна карта <span>с подсветкой?</span>
 					</h3>
-					<div class="backlight-btn-row d-flex align-items-center justify-content-between">
+					<div class="backlight-btn-row d-flex flex-lg-row flex-column align-items-center justify-content-between">
 						<a href="#catalog"
 							class="baclight-link --btn-hover scroll-link d-flex align-items-center justify-content-center">
 							Выбрать из каталога
@@ -566,9 +582,10 @@
 				</div>
 			</div>
 		</section>
-		<section id="delivery" class="delivery delivery-padding position-relative">
+		<section id="delivery" class="delivery delivery-padding position-relative" data-aos="flip-down">
 			<div class="container">
-				<div class="delivery-wrap d-flex justify-content-between">
+				<div class="delivery-wrap ">
+		
 					<div class="delivery-coll">
 						<h3 class="delivery-title">
 							Доставим вашу карту в любую точку мира
@@ -579,51 +596,59 @@
 						<p class="delivery-text">
 							Мы отправили уже более 1000 карт и выработали специальную технологию по упаковки карты.
 						</p>
-						<div class="delivery-row d-flex justify-content-between">
-		
-							<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
-								<img src="./assets/img/delivery/delivery-1.svg" alt="" class="box-img individ-box-img">
-								<p class="delivery-box-text text-center">
-									Индивидуальный расчет стоимости доставки
-								</p>
-							</div>
-		
-							<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
-								<img src="./assets/img/delivery/delivery-2.svg" alt="" class="box-img individ-box-img">
-								<p class="delivery-box-text text-center">
-									Показываем
-									карту перед
-									отправкой
-								</p>
-							</div>
-		
-							<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
-								<img src="./assets/img/delivery/delivery-3.svg" alt="" class="box-img individ-box-img">
-								<p class="delivery-box-text text-center">
-									Вернем деньги
-									если карта <br>
-									не понравится
-								</p>
-							</div>
-		
-						</div>
 					</div>
 					<img src="./assets/img/delivery/delivery.jpg" alt="" class="delivery-img">
+					<div class="delivery-row d-flex  align-items-start justify-content-around">
+		
+						<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
+							<img src="./assets/img/delivery/delivery-1.svg" alt=""
+								class="box-img  individ-box-img delivery-box-img ">
+							<p class="delivery-box-text text-center">
+								Индивидуальный расчет стоимости доставки
+							</p>
+						</div>
+		
+						<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
+							<img src="./assets/img/delivery/delivery-2.svg" alt=""
+								class="box-img individ-box-img delivery-box-img ">
+							<p class="delivery-box-text text-center">
+								Показываем
+								карту перед
+								отправкой
+							</p>
+						</div>
+		
+						<div class="delivery-box  d-flex flex-column align-items-center justify-content-center">
+							<img src="./assets/img/delivery/delivery-3.svg" alt=""
+								class="box-img individ-box-img delivery-box-img">
+							<p class="delivery-box-text text-center">
+								Вернем деньги
+								<span>
+									если карта
+								</span>
+		
+								не понравится
+							</p>
+						</div>
+		
+					</div>
+		
 				</div>
 			</div>
 		</section>
 		<section class="about about-padding position-relative">
 			<div class="container">
-				<h3 class="title about-title text-center">
+				<h3 class="title about-title text-center" data-aos="fade-up">
 					гарантируем безупречное качество
 				</h3>
-				<img src="./assets/img/about/about.jpg" alt="" class="about-img d-block">
+				<img src="./assets/img/about/about.jpg" alt="" class="about-img d-block" data-aos="fade-up">
 				<h3 class="about-subtitle text-center">
 					Карты “Chapa world map”
 				</h3>
-				<div class="about-row d-flex justify-content-between">
+				<div class="about-row d-flex justify-content-around">
 		
-					<div class="box about-box  d-flex flex-column align-items-center justify-content-center">
+					<div class="box about-box  d-flex flex-column align-items-center justify-content-center"
+						data-aos="fade-right">
 						<img src="./assets/img/about/about-1.svg" alt="" class="box-img individ-box-img">
 						<h3 class="box-title text-center">
 							Долговечны
@@ -634,7 +659,8 @@
 						</p>
 					</div>
 		
-					<div class="box about-box  d-flex flex-column align-items-center justify-content-center">
+					<div class="box about-box  d-flex flex-column align-items-center justify-content-center "
+						data-aos="fade-down">
 						<img src="./assets/img/about/about-2.svg" alt="" class="box-img individ-box-img">
 						<h3 class="box-title text-center">
 							Просты в установке
@@ -644,7 +670,8 @@
 						</p>
 					</div>
 		
-					<div class="box about-box  d-flex flex-column align-items-center justify-content-center">
+					<div class="box about-box  d-flex flex-column align-items-center justify-content-center"
+						data-aos="fade-left">
 						<img src="./assets/img/about/about-3.svg" alt="" class="box-img individ-box-img">
 						<h3 class="box-title text-center">
 							Детальны
@@ -659,35 +686,38 @@
 		</section>
 		<section class="choice choice-padding position-relative">
 			<div class="container">
-				<div class="choice-container d-flex  justify-content-between">
+				<div class="choice-container" data-aos="flip-up">
 					<div class="choice-container-col ">
 						<h3 class="choice-container-title">
 							Не можете выбрать подходящую карту?
 						</h3>
 						<p class="choice-container-text">
-							Отправьте нам фото вашего интерьера.<br>
+							<span>
+								Отправьте нам фото вашего интерьера.
+							</span>
+		
 							В течении дня наш дизайнер вышлет вам готовый
 							макет с наиболее подходящими картами.
 						</p>
-						<div class="chice-row-btn  d-flex align-items-center justify-content-between">
-							<a href="#"
-								class="choice-link choice-link-whatsapp  d-flex align-items-center justify-content-center">
-								Отправить в whatsapp
-							</a>
-							<a href="#"
-								class="choice-link choice-link-telegram d-flex align-items-center justify-content-center">
-								Отправить в telegram
-							</a>
-						</div>
 					</div>
 					<img src="./assets/img/choice/choice-1.jpg" alt="" class="choice-container-img">
+					<div class="chice-row-btn  d-flex align-items-center justify-content-between">
+						<a href="#" class="choice-link choice-link-whatsapp  d-flex align-items-center justify-content-center">
+							Отправить в whatsapp
+						</a>
+						<a href="#" class="choice-link choice-link-telegram d-flex align-items-center justify-content-center">
+							Отправить в telegram
+						</a>
+					</div>
+		
+		
 				</div>
-				<div class="choice-wrap d-flex  justify-content-between">
+				<div class="choice-wrap d-flex flex-lg-row flex-column-reverse justify-content-between">
 					<a href="#popup-video-2" data-video="#video-2"
 						class="choice-wrap-link video-start d-inline-block position-relative">
 						<img class="choice-wrap-img" src="./assets/img/choice/choice-2.jpg" alt="">
 						<span class="choise-link-span position-absolute d-flex align-items-center justify-content-center">
-							<img class="choice-wrap-img" src="./assets/img/choice/arrow.svg" alt="">
+							<img class="choice-wrap-img-2" src="./assets/img/choice/arrow.svg" alt="">
 						</span>
 					</a>
 					<div class="choice-box">
@@ -717,7 +747,8 @@
 								двухсторонний скотч
 							</li>
 						</ul>
-						<p class="choice-box-text d-flex align-items-center justify-content-start">
+						<p
+							class="choice-box-text d-flex flex-column flex-md-row  align-items-lg-center aling-items-start justify-content-start">
 							<img class="choice-box-img" src="./assets/img/choice/choice-3.png" alt="">
 							Если у вас не получится разобраться <br>
 							с монтажом самостоятельно, мы поможем
@@ -727,12 +758,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="order order-padding">
+		<section class="order order-padding" data-aos="zoom-in">
 			<div class="container">
 				<h3 class="title order-title text-center">
 					Сделать заказ легко
 				</h3>
-				<div class="order-wrap d-flex justify-content-between">
+				<div class="order-wrap flex-wrap d-flex justify-content-around">
 		
 					<div class="order-box">
 						<div class="order-box-head">
@@ -797,25 +828,13 @@
 				</a>
 			</div>
 		</section>
-		<section id="stories" class="stories position-relative">
+		<section id="stories" class="stories position-relative" data-aos="fade-up">
 			<div class="container">
 				<h3 class="title stories-title text-center">
 					Истории наших клиентов
 				</h3>
 				<div class="stories-wrapp position-relative">
-					<div class="stories-button-container  ">
-						<button class="stories-btn stories__arrow-prev position-absolute">
-							<svg width="45" height="79" viewBox="0 0 45 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path opacity="0.5" d="M43 2L3 39.9412L43 77" stroke="white" stroke-width="4" />
-							</svg>
-						</button>
-						<button class="stories-btn stories__arrow-next position-absolute">
-							<svg width="46" height="79" viewBox="0 0 46 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path opacity="0.5" d="M2 77L42 39.0588L2 2" stroke="white" stroke-width="5" />
-							</svg>
 		
-						</button>
-					</div>
 					<div class="stories-slaider ">
 		
 						<div>
@@ -839,7 +858,7 @@
 												class="storiews-head-img">
 										</a>
 									</div>
-									<div id="storiews-slaider-body-1" class="storiews-slaider-body">
+									<div id="storiews-slaider-body-1" class="storiews-slaider-body d-none d-lg-block">
 										<div class="storiews-box-body-img">
 											<img src="./assets/img/storiews/storiews-1-2gis.jpg" alt=""
 												class="storiews-body-img">
@@ -887,7 +906,7 @@
 										</a>
 									</div>
 									<a href="#back-call"
-										class="stories-box-btn --btn-hover  open-modal   d-flex align-items-center justify-content-center">
+										class="stories-box-btn --btn-hover  open-modal d-none   d-lg-flex align-items-center justify-content-center">
 										Хочу также
 									</a>
 								</div>
@@ -912,7 +931,7 @@
 										</a>
 		
 									</div>
-									<div id="storiews-slaider-body-2" class="storiews-slaider-body">
+									<div id="storiews-slaider-body-2" class="storiews-slaider-body  d-none d-lg-block">
 										<div class="storiews-box-body-img">
 											<img src="./assets/img/storiews/storiews-1-stamatolog.jpg" alt=""
 												class="storiews-body-img">
@@ -955,7 +974,7 @@
 										</a>
 									</div>
 									<a href="#back-call"
-										class="stories-box-btn --btn-hover open-modal   d-flex align-items-center justify-content-center">
+										class="stories-box-btn --btn-hover open-modal   d-none   d-lg-flex align-items-center justify-content-center">
 										Хочу также
 									</a>
 								</div>
@@ -983,7 +1002,7 @@
 												class="storiews-head-img">
 										</a>
 									</div>
-									<div id="storiews-slaider-body-3" class="storiews-slaider-body">
+									<div id="storiews-slaider-body-3" class="storiews-slaider-body  d-none d-lg-block">
 										<div class="storiews-box-body-img">
 											<img src="./assets/img/storiews/storiews-1-daigo.jpg" alt=""
 												class="storiews-body-img">
@@ -1031,7 +1050,7 @@
 										</a>
 									</div>
 									<a href="#back-call"
-										class="stories-box-btn --btn-hover open-modal   d-flex align-items-center justify-content-center">
+										class="stories-box-btn --btn-hover open-modal d-none   d-lg-flex align-items-center justify-content-center">
 										Хочу также
 									</a>
 								</div>
@@ -1059,7 +1078,7 @@
 												class="storiews-head-img">
 										</a>
 									</div>
-									<div id="storiews-slaider-body-4" class="storiews-slaider-body">
+									<div id="storiews-slaider-body-4" class="storiews-slaider-body  d-none d-lg-block">
 										<div class="storiews-box-body-img">
 											<img src="./assets/img/storiews/storiews-1-blog.jpg" alt=""
 												class="storiews-body-img">
@@ -1101,7 +1120,7 @@
 										</p>
 									</div>
 									<a href="#back-call"
-										class="stories-box-btn --btn-hover open-modal   d-flex align-items-center justify-content-center">
+										class="stories-box-btn --btn-hover open-modal   d-none   d-lg-flex align-items-center justify-content-center">
 										Хочу также
 									</a>
 								</div>
@@ -1110,16 +1129,31 @@
 		
 						</div>
 		
-		
-		
-		
 					</div>
+		
+					<div class="stories-button-container  ">
+						<button class="stories-btn stories__arrow-prev ">
+							<svg width="45" height="79" viewBox="0 0 45 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.5" d="M43 2L3 39.9412L43 77" stroke="white" stroke-width="4" />
+							</svg>
+						</button>
+						<button class="stories-btn stories__arrow-next ">
+							<svg width="46" height="79" viewBox="0 0 46 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.5" d="M2 77L42 39.0588L2 2" stroke="white" stroke-width="5" />
+							</svg>
+		
+						</button>
+					</div>
+					<a href="#back-call"
+						class="stories-box-btn --btn-hover open-modal   d-lg-none   d-flex align-items-center justify-content-center">
+						Хочу также
+					</a>
 				</div>
 			</div>
 		</section>
-		<section class="galary">
+		<section class="galary" data-aos="fade-down">
 			<h3 class="title galary-title text-center">
-				Наши карты в интерьере
+				Наши карты <span>в интерьере</span>
 			</h3>
 			<div class="galary-wrap galary-popup d-flex flex-wrap justify-content-evenly">
 				<a href="./assets/img/galary/galary-1.jpg" class="galary-box-link">
@@ -1175,29 +1209,12 @@
 				</button>
 			</div>
 		</section>
-		<section class="reviews position-relative">
+		<section id="reviews" class="reviews position-relative" data-aos="fade-right">
 			<div class="container">
 				<h3 class="reviews-title title text-center">
 					Что говорят о наших картах
 				</h3>
 				<div class="reviews-wrap position-relative">
-					<div class="reviews-box-row">
-						<button class="reviews-btn --btn-hover reviews__arrow-prev">
-							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M10 11.5H11.381L10.3201 10.6159L4.78102 6L10.3201 1.38411L11.381 0.5H10H8H7.81897L7.67991 0.61589L1.67991 5.61589L1.21898 6L1.67991 6.38411L7.67991 11.3841L7.81897 11.5H8H10Z"
-									fill="white" stroke="white" />
-							</svg>
-		
-						</button>
-						<button class="reviews-btn --btn-hover reviews__arrow-next">
-							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M3 0.5H1.61898L2.67991 1.38411L8.21898 6L2.67991 10.6159L1.61898 11.5H3H5H5.18103L5.32009 11.3841L11.3201 6.38411L11.781 6L11.3201 5.61589L5.32009 0.615889L5.18103 0.5H5H3Z"
-									fill="white" stroke="white" />
-							</svg>
-						</button>
-					</div>
 					<div class="reviews-slaider galary-popup-2">
 						<a href="./assets/img/reviews/reviews-1.jpg" class="reviews-link">
 							<img src="./assets/img/reviews/reviews-1.jpg" alt="" class="reviews-img">
@@ -1236,10 +1253,27 @@
 							<img src="./assets/img/reviews/reviews-12.jpg" alt="" class="reviews-img">
 						</a>
 					</div>
+					<div class="reviews-box-row d-flex align-items-center justify-content-center">
+						<button class="reviews-btn --btn-hover reviews__arrow-prev">
+							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10 11.5H11.381L10.3201 10.6159L4.78102 6L10.3201 1.38411L11.381 0.5H10H8H7.81897L7.67991 0.61589L1.67991 5.61589L1.21898 6L1.67991 6.38411L7.67991 11.3841L7.81897 11.5H8H10Z"
+									fill="white" stroke="white" />
+							</svg>
+		
+						</button>
+						<button class="reviews-btn --btn-hover reviews__arrow-next">
+							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3 0.5H1.61898L2.67991 1.38411L8.21898 6L2.67991 10.6159L1.61898 11.5H3H5H5.18103L5.32009 11.3841L11.3201 6.38411L11.781 6L11.3201 5.61589L5.32009 0.615889L5.18103 0.5H5H3Z"
+									fill="white" stroke="white" />
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="quest">
+		<section id="quest" class="quest" data-aos="fade-left">
 			<div class="container">
 				<h3 class="title quest-title text-center">
 					Часто задаваемые вопросы
@@ -1311,7 +1345,7 @@
 		</section>
 		<section class="forms">
 			<div class="contaier">
-				<div class="forms-wrap">
+				<div class="forms-wrap" data-aos="flip-up">
 					<h3 class="forms-title text-center">
 						Есть дополнительные вопросы?
 					</h3>
@@ -1320,14 +1354,16 @@
 					</p>
 					<form id="form-6" action="/" class="forms-form d-flex align-items-center justify-content-between"
 						novalidate="novalidate">
-						<input type="text" name="name" class="forms-input text-center" placeholder="Ваше имя">
+						<input type="text" name="name" class="forms-input material-input-order text-center"
+							placeholder="Ваше имя">
 						<input type="tel" name="phone" class="forms-input mask-tell text-center"
 							placeholder="Ваш номер телефона">
-						<button class="forms-btn --btn-hover d-flex align-items-center justify-content-center">
+						<button
+							class="forms-btn --btn-hover material-input-order d-flex align-items-center justify-content-center">
 							обсудить карту
 						</button>
 					</form>
-					<a href="#" class="forms-footer-link d-block text-end">
+					<a href="#" class="forms-footer-link  d-block text-lg-end text-center">
 						Согласие на обработку персональных данных
 					</a>
 				</div>
@@ -1335,7 +1371,7 @@
 		</section>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer-wrap d-flex justify-content-between">
+				<div class="footer-wrap d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center">
 					<div class="footer-coll">
 						<div class="footer-logo">
 							<img src="./assets/img/logo.svg" alt="" class="footer-logo-img">
@@ -1347,8 +1383,19 @@
 						<a href="#" class="footer-link">
 							Политика конфиденциальности
 						</a>
+						<div class="footer-mess-box d-lg-none d-flex justify-content-center">
+							<a href="#" class="footer-mess-link --telegramm">
+								<img src="./assets/img/footer-mess-1.svg" alt="" class="footer-mes-img">
+							</a>
+							<a href="#" class="footer-mess-link --whatsapp">
+								<img src="./assets/img/footer-mess-2.svg" alt="" class="footer-mes-img">
+							</a>
+							<a href="https://vk.com/chapamap" class="footer-mess-link --vk">
+								<img src="./assets/img/footer-mess-3.svg" alt="" class="footer-mes-img">
+							</a>
+						</div>
 					</div>
-					<div class="footer-col-2">
+					<div class="footer-col-2 d-none d-lg-block">
 						<h3 class="footer-title">
 							Навигация по сайту
 						</h3>
@@ -1387,7 +1434,8 @@
 					</div>
 		
 					<div class="footer-coll-3">
-						<div class="footer-coll-row d-flex justify-content-end">
+						<div
+							class="footer-coll-row d-flex flex-lg-row flex-column justify-content-center  justify-content-lg-end">
 							<a href="mailto:заглушка@mail.ru" class="footer-addres">
 								заглушка@mail.ru
 							</a>
@@ -1402,12 +1450,13 @@
 							<h4 class="footer-mess-title">
 								Связаться в мессенджере:
 							</h4>
-							<div class="footer-mess-row d-flex align-items-center justify-content-between">
-								<div class="footer-mess-box d-flex">
-									<a href="" class="footer-mess-link --telegramm">
+							<div
+								class="footer-mess-row d-flex flex-lg-row flex-column  align-items-center justify-content-lg-between justify-content-center">
+								<div class="footer-mess-box d-none d-lg-flex">
+									<a href="#" class="footer-mess-link --telegramm">
 										<img src="./assets/img/footer-mess-1.svg" alt="" class="footer-mes-img">
 									</a>
-									<a href="" class="footer-mess-link --whatsapp">
+									<a href="#" class="footer-mess-link --whatsapp">
 										<img src="./assets/img/footer-mess-2.svg" alt="" class="footer-mes-img">
 									</a>
 									<a href="https://vk.com/chapamap" class="footer-mess-link --vk">
@@ -1475,6 +1524,51 @@
 				</div>
 			</a>
 		</div>
+		<div class="fon"></div>
+		<div class="mob">
+			<button class="mob-close --close">
+				<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</button>
+			<div class="mob-head">
+				<a href="#catalog" class="mob-link scroll-link --close">
+					Карты в наличии
+				</a>
+				<a href="#stories" class="mob-link scroll-link --close">
+					Кейсы
+				</a>
+				<a href="#reviews" class="mob-link scroll-link --close">
+					Отзывы
+				</a>
+				<a href="#quest" class="mob-link scroll-link --close">
+					Доставка и оплата
+				</a>
+			</div>
+			<div class="mob-body">
+				<a href="mailto:sale@chapa-map.ru" class="mob-adress">
+					sale@chapa-map.ru
+				</a>
+				<a href="tel:89197186698" class="mob-adress">
+					8 (919) 71-86-698
+					<span class="mob-adress-span">
+						Мы на связи
+					</span>
+				</a>
+				<div class="mob-row">
+					<a href="#" class="footer-mess-link --telegramm">
+						<img src="./assets/img/footer-mess-1.svg" alt="" class="footer-mes-img">
+					</a>
+					<a href="#" class="footer-mess-link --whatsapp">
+						<img src="./assets/img/footer-mess-2.svg" alt="" class="footer-mes-img">
+					</a>
+					<a href="https://vk.com/chapamap" class="footer-mess-link --vk">
+						<img src="./assets/img/footer-mess-3.svg" alt="" class="footer-mes-img">
+					</a>
+				</div>
+			</div>
+		</div>
 		<div id="popup-video-1" class="popup-video  mfp-hide  position-relative">
 		
 			<video id="video-1" preload="metadata" class="video-box" src="./assets/video/chap-map.mp4" loop controls>
@@ -1501,7 +1595,195 @@
 		
 			</button>
 		</div>
+	
+		<!--обратный звонок-->
+		
+		<div id="back-call" class="popup  mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="popup-title text-center">
+				Оставьте заявку
+			</h3>
+			<p class="popup-text text-center">
+				Мы перезвоним и ответим<br>
+				на все вопросы
+			</p>
+			<form id="form-1" action="/" class="popup-form">
+				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
+				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
+					обсудить карту
+				</button>
+			</form>
+			<a href="#" class="popup-link d-block  text-center">
+				Согласие на обработку персональных данных
+			</a>
+		</div>
+		
+		<!--заказать карту-->
+		
+		<div id="order-card" class="popup  mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="popup-title text-center">
+				Оставьте заявку
+			</h3>
+			<p class="popup-text text-center">
+				Мы перезвоним и уточним все необходимые детали
+			</p>
+			<form id="form-2" action="/" class="popup-form">
+				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
+				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
+					обсудить карту
+				</button>
+			</form>
+			<a href="#" class="popup-link d-block   text-center">
+				Согласие на обработку персональных данных
+			</a>
+		</div>
+		
+		<!--индивидуальная карта-->
+		
+		<div id="individual-card" class="popup  mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="popup-title text-center">
+				Оставьте заявку
+			</h3>
+			<p class="popup-text text-center">
+				Для того, чтобы узнать точную стоимость индивидуальной карты
+			</p>
+			<form id="form-3" action="/" class="popup-form">
+				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
+				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
+					узнать
+				</button>
+			</form>
+			<a href="#" class="popup-link d-block   text-center">
+				Согласие на обработку персональных данных
+			</a>
+		</div>
+		
+		<!--узнать стоимость-->
+		
+		<div id="find-cost" class="popup  mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="popup-title text-center">
+				Оставьте заявку
+			</h3>
+			<p class="popup-text text-center">
+				Для того, чтобы узнать точную стоимость карты
+			</p>
+			<form id="form-4" action="/" class="popup-form">
+				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
+				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
+					отправить
+				</button>
+			</form>
+			<a href="#" class="popup-link d-block   text-center">
+				Согласие на обработку персональных данных
+			</a>
+		</div>
+		
+		<!--подбор карты-->
+		
+		<div id="card-selection" class="popup --popup-fix   mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="popup-title text-center">
+				Подберем карту
+			</h3>
+			<p class="popup-text text-center">
+				Отправьте фото вашего интерьера. Мы подготовим макет с наиболее подходящими картами.
+			</p>
+			<div class="popup-body">
+				<a href="#" class="popup-mess choice-link-whatsapp  d-flex align-items-center justify-content-center">
+					Отправить в whatsapp
+				</a>
+				<a href="#" class="popup-mess choice-link-telegram d-flex align-items-center justify-content-center">
+					Отправить в telegram
+				</a>
+			</div>
+		</div>
+		<div id="info-popup" class="info mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<h3 class="info-title text-center">
+				Материалы
+			</h3>
+			<p class="info-text  text-center">
+				Мы используем только ценные породы дерева.
+			</p>
+			<div class="info-wrapp d-flex flex-wrap justify-content-around">
+				<div class="info-box">
+					<img src="./assets/img/info-1.jpg" alt="" class="info-img">
+					<h4 class="info-box-title text-center">
+						Дуб
+					</h4>
+				</div>
+				<div class="info-box">
+					<img src="./assets/img/info-2.jpg" alt="" class="info-img">
+					<h4 class="info-box-title text-center">
+						Береза
+					</h4>
+				</div>
+				<div class="info-box">
+					<img src="./assets/img/info-3.jpg" alt="" class="info-img">
+					<h4 class="info-box-title text-center">
+						ПВХ
+					</h4>
+				</div>
+			</div>
+		</div>
 		<div id="materila-popup" class="material mfp-hide">
+			<button class="modal-btn-close popup-close">
+				<svg width="16" height="16" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 24L2 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M2 24L24 2" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
 			<!--Карта мира из ПВХ-->
 			<div id="#map-pvh" class="material-map">
 		
@@ -1513,7 +1795,7 @@
 						<div class="material-head-text">
 							Посмотреть расцветку:
 						</div>
-						<div class="material-head-row">
+						<div class="material-head-row ">
 							<label class="material-label material-btn-active" data-type="pvh-black">
 								<input type="radio" name="material-radio-1-1" class="material-label-input" checked>
 								<span class="maerial-label-span">
@@ -1870,7 +2152,7 @@
 								</svg>
 							</button>
 						</div>
-						<div class="material-pay">
+						<div class="material-pay 	">
 							<span>от 6 700 руб.</span>
 							от 6 100 руб.
 						</div>
@@ -1903,11 +2185,15 @@
 							250х160 см , 200х130 см, 150х90 см, 100х60 см
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span>5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
 						</p>
+						<div class="material-pay-2 d-flex d-lg-none align-items-start">
+							<span>от 6 700 руб.</span>
+							от 6 100 руб.
+						</div>
 					</div>
 				</div>
 		
@@ -1928,7 +2214,7 @@
 						<div class="material-head-text">
 							Посмотреть расцветку:
 						</div>
-						<div class="material-head-row">
+						<div class="material-head-row -fix-lex">
 							<label class="material-label material-btn-active" data-type="birch-white">
 								<input type="radio" name="material-radio-2-1" class="material-label-input" checked>
 								<span class="maerial-label-span">
@@ -2062,7 +2348,7 @@
 							250х160 см , 200х130 см, 150х90 см, 100х60 см
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span>5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
@@ -2088,7 +2374,7 @@
 						<div class="material-head-text">
 							Посмотреть расцветку:
 						</div>
-						<div class="material-head-row">
+						<div class="material-head-row -fix-lex">
 							<label class="material-label material-btn-active" data-type="oak-white">
 								<input type="radio" name="material-radio-3-1" class="material-label-input" checked>
 								<span class="maerial-label-span">
@@ -2204,7 +2490,7 @@
 							250х160 см , 200х130 см, 150х90 см
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span>5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
@@ -2230,7 +2516,7 @@
 						<div class="material-head-text">
 							Посмотреть расцветку:
 						</div>
-						<div class="material-head-row">
+						<div class="material-head-row -fix-lex">
 							<label class="material-label material-btn-active" data-type="multilevel-one">
 								<input type="radio" name="material-radio-4-1" class="material-label-input" checked>
 								<span class="maerial-label-span">
@@ -2361,7 +2647,7 @@
 							250х160 см , 200х130 см, 150х90 см
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span>5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
@@ -2387,7 +2673,7 @@
 						<div class="material-head-text">
 							Посмотреть подсветку:
 						</div>
-						<div class="material-head-row">
+						<div class="material-head-row -fix-lex">
 							<label class="material-label material-btn-active" data-type="backlight-cold">
 								<input type="radio" name="material-radio-5-1" class="material-label-input" checked>
 								<span class="maerial-label-span">
@@ -2529,7 +2815,7 @@
 							250х160 см , 200х130 см, 150х90 см, 100х60 см
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span> 5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
@@ -2620,7 +2906,7 @@
 							250х150 см , 200х120 см, 150х90 см.
 						</p>
 						<h3 class="material-body-title">
-							Сроки изготовления: 5-7 дней.
+							Сроки изготовления: <span> 5-7 дней.</span>
 						</h3>
 						<p class="material-subtext">
 							*Точные сроки уточняйте у менеджера.
@@ -2637,150 +2923,27 @@
 		
 			<div class="material-footer">
 				<h3 class="material-footer-title text-center">
-					Для точного расчета стоимости, оставьте заявку:
+					Для точного расчета <span>стоимости, оставьте заявку:</span>
 				</h3>
 				<form id="form-5" action="/" class="material-form d-flex align-items-center justify-content-between">
-					<input type="text" name="name" class="material-input text-center" placeholder="Ваше имя">
-					<input type="text" name="phone" class="material-input mask-tell text-center"
+					<input type="text" name="name" class="material-input material-input-order text-center"
+						placeholder="Ваше имя">
+					<input type="text" name="phone" class="material-input  mask-tell text-center"
 						placeholder="Ваш номер телефона">
-					<button class="material-btn --btn-hover d-flex align-items-center justify-content-center">
-						Узнать точную стоимость
+					<button
+						class="material-btn --btn-hover material-input-order d-flex align-items-center justify-content-center">
+						<span class="d-none d-lg-block">
+							Узнать точную стоимость
+						</span>
+						<span class="d-block d-lg-none">
+							обсудить карту
+						</span>
+		
 					</button>
 				</form>
-				<a href="#" class="material-footer-link d-block text-end">
+				<a href="#" class="material-footer-link d-block text-center text-lg-end">
 					Согласие на обработку персональных данных
 				</a>
-			</div>
-		</div>
-		<!--обратный звонок-->
-		
-		<div id="back-call" class="popup  mfp-hide">
-			<h3 class="popup-title text-center">
-				Оставьте заявку
-			</h3>
-			<p class="popup-text text-center">
-				Мы перезвоним и ответим<br>
-				на все вопросы
-			</p>
-			<form id="form-1" action="/" class="popup-form">
-				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
-				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
-					отправить
-				</button>
-			</form>
-			<a href="#" class="popup-link d-block  text-center">
-				Согласие на обработку персональных данных
-			</a>
-		</div>
-		
-		<!--заказать карту-->
-		
-		<div id="order-card" class="popup  mfp-hide">
-			<h3 class="popup-title text-center">
-				Оставьте заявку
-			</h3>
-			<p class="popup-text text-center">
-				Мы перезвоним и уточним все необходимые детали
-			</p>
-			<form id="form-2" action="/" class="popup-form">
-				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
-				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
-					отправить
-				</button>
-			</form>
-			<a href="#" class="popup-link d-block   text-center">
-				Согласие на обработку персональных данных
-			</a>
-		</div>
-		
-		<!--индивидуальная карта-->
-		
-		<div id="individual-card" class="popup  mfp-hide">
-			<h3 class="popup-title text-center">
-				Оставьте заявку
-			</h3>
-			<p class="popup-text text-center">
-				Для того, чтобы узнать точную стоимость индивидуальной карты
-			</p>
-			<form id="form-3" action="/" class="popup-form">
-				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
-				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
-					отправить
-				</button>
-			</form>
-			<a href="#" class="popup-link d-block   text-center">
-				Согласие на обработку персональных данных
-			</a>
-		</div>
-		
-		<!--узнать стоимость-->
-		
-		<div id="find-cost" class="popup  mfp-hide">
-			<h3 class="popup-title text-center">
-				Оставьте заявку
-			</h3>
-			<p class="popup-text text-center">
-				Для того, чтобы узнать точную стоимость карты
-			</p>
-			<form id="form-4" action="/" class="popup-form">
-				<input type="text" name="name" class="popup-form-input  text-center" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="popup-form-input mask-tell  text-center" placeholder="Ваш номер телефона">
-				<button type="submit" class="popup-btn --btn-hover d-flex align-items-center justify-content-center">
-					отправить
-				</button>
-			</form>
-			<a href="#" class="popup-link d-block   text-center">
-				Согласие на обработку персональных данных
-			</a>
-		</div>
-		
-		<!--подбор карты-->
-		
-		<div id="card-selection" class="popup --popup-fix   mfp-hide">
-			<h3 class="popup-title text-center">
-				Подберем карту
-			</h3>
-			<p class="popup-text text-center">
-				Отправьте фото вашего интерьера. Мы подготовим макет с наиболее подходящими картами.
-			</p>
-			<div class="popup-body">
-				<a href="#" class="popup-mess choice-link-whatsapp  d-flex align-items-center justify-content-center">
-					Отправить в whatsapp
-				</a>
-				<a href="#" class="popup-mess choice-link-telegram d-flex align-items-center justify-content-center">
-					Отправить в telegram
-				</a>
-			</div>
-		</div>
-		<div id="info-popup" class="info mfp-hide">
-			<h3 class="info-title text-center">
-				Материалы
-			</h3>
-			<p class="info-text  text-center">
-				Мы используем только ценные породы дерева.
-			</p>
-			<div class="info-wrapp d-flex flex-wrap justify-content-between">
-				<div class="info-box">
-					<img src="./assets/img/info-1.jpg" alt="" class="info-img">
-					<h4 class="info-box-title text-center">
-						Дуб
-					</h4>
-				</div>
-				<div class="info-box">
-					<img src="./assets/img/info-2.jpg" alt="" class="info-img">
-					<h4 class="info-box-title text-center">
-						Береза
-					</h4>
-				</div>
-				<div class="info-box">
-					<img src="./assets/img/info-3.jpg" alt="" class="info-img">
-					<h4 class="info-box-title text-center">
-						ПВХ
-					</h4>
-				</div>
 			</div>
 		</div>
 	</div>
