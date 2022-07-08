@@ -544,4 +544,4 @@ function timerDay(expirationDate, days, hours, minutes, seconds, daysText, hours
 
 }
 
-timerDay('sept 12 2022 20:35:00', '.time-days', '.time-hours', '.time-minets', '.time-seconds', '.text-days', '.text-hours', '.text-minets', '.text-seconds');
+timerDay('July 9 2022 20:35:00', '.time-days', '.time-hours', '.time-minets', '.time-seconds', '.text-days', '.text-hours', '.text-minets', '.text-seconds');
